@@ -33,7 +33,7 @@ pipeline {
 
         stage('Build and Push Docker Image') {
             environment {
-                DOCKER_IMAGE = "ghiles-19/demo-java-app:${build_version}"
+                DOCKER_IMAGE = "lounes1906/demo-java-app:${build_version}"
                 REGISTRY_CREDENTIALS = credentials('dockerhub')
             }
             steps {
