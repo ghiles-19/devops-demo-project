@@ -55,7 +55,7 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
                     sh '''
-                        git config user.email "ghiles-19@gmail.com"
+                        git config user.email "lounasamah@gmail.com"
                         git config user.name "ghiles-19"
                         sed -i "s/tag: .*/tag: \\"${build_version}\\"/" helm/app/values.yaml
                         git add helm/app/values.yaml
