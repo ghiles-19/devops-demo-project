@@ -5,8 +5,8 @@
 replicaCount: 2
 
 image:
-  githubID: ghiles-19
-  repository: ghiles-19/demo-java-app
+  githubID: lounes1906
+  repository: demo-java-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "V1.0"
